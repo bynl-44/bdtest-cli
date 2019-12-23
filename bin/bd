@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+"use strict";
+
+const program = require("commander");
+
+const updater = require("update-notifier");
+const pkg = require("../package.json");
+updater({ pkg }).notify({ defer: true });
+
+program.version("0.0.1", "-v, --version", "版本号");
+program.command("new [name]", "新建一个项目");
+
+program.helpOption("-h, --help", "帮助");
+
+const argv = process.argv;
+
+program.parse(process.argv);

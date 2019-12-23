@@ -1,0 +1,10 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {
+    "webpack": "^4.41.4"
+  }
+}

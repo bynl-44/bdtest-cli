@@ -1,0 +1,22 @@
+{
+  "name": "bynl-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "./bin/bd new sss",
+    "rm": "rm -rf sss",
+    "retest": "rm -rf sss && ./bin/bd new sss"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "empty-dir": "^2.0.0",
+    "inquirer": "^7.0.1",
+    "map-stream": "^0.0.7",
+    "update-notifier": "^4.0.0",
+    "vinyl-fs": "^3.0.3"
+  }
+}
